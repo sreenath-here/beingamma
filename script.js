@@ -54,3 +54,28 @@ window.addEventListener("click", function(event) {
   }
 });
 
+//form
+document.getElementById("sendEmailBtn").addEventListener("click", function () {
+  // Get values from the form fields
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const message = document.getElementById("message").value.trim();
+
+  // Validate inputs
+  if (name === "" || email === "" || message === "") {
+      document.getElementById("formStatus").textContent = "Please fill out all fields.";
+      document.getElementById("formStatus").style.color = "red";
+      return;
+  }
+
+  // Encode the body text to handle spaces and special characters
+  const mailBody = `Name: ${name}\nEmail: ${email}\n\nMessage: ${message}`;
+  const mailtoLink = `mailto:asn.sreenath@gmail.com?subject=Being Amma, Inquiry from ${name}&body=${encodeURIComponent(mailBody)}`;
+
+  // Open the mail client with the pre-filled information
+  window.location.href = mailtoLink;
+
+  // Show success message (optional)
+  document.getElementById("formStatus").textContent = "Your message has been sent. Please check your email client.";
+  document.getElementById("formStatus").style.color = "green";
+});
