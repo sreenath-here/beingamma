@@ -281,33 +281,44 @@
         <div class="faq-form-container">
           <h3 class="faq-form-title">Have Any Question?</h3>
           <p class="faq-form-description">
-            We have several powerful plans to showcase your business and get
-            discovered.
+            Got Questions? We're here to help. Reach out to us and we'll get
+            back to you soon!
           </p>
-          <form class="faq-form">
+
+          <form class="faq-form" id="faqForm">
             <div class="form-row">
               <input
                 type="text"
+                id="name"
+                name="name"
                 placeholder="Your full name"
                 class="form-input"
+                required
               />
             </div>
             <div class="form-row">
               <input
                 type="email"
+                id="email"
+                name="email"
                 placeholder="Your mail address"
                 class="form-input"
+                required
               />
             </div>
             <div class="form-row">
               <textarea
+                id="message"
+                name="message"
                 placeholder="Your message here..."
                 class="form-textarea"
+                required
               ></textarea>
             </div>
-            <button type="submit" class="form-submit">
+            <button type="button" id="sendEmailBtn" class="form-submit">
               Send Your Message Now
             </button>
+            <p id="formStatus" class="form-status"></p>
           </form>
         </div>
       </div>
