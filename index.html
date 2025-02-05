@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Being Amma - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <style></style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">Being Amma</div>
+      <nav>
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        <ul id="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">What is Being Amma</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#download">Download</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero-section" id="home">
+      <div class="hero-class">
+        <div class="hero-content">
+          <h1 style="font-family: Sora, sans-serif">
+            Pregnancy Simplified and Supported with
+            <span style="color: #f45b69">Being Amma</span>.
+          </h1>
+          <p style="font-family: Sora, sans-serif">
+            Empowering Every Step of Your Pregnancy Journey with Care and
+            Confidence.!
+          </p>
+          <div class="cta">
+            <!-- <a href="#">Download on App Store</a> -->
+            <a href="#" class="playstore-link" onclick="alertBox(this)"
+              ><img
+                class="playstore"
+                src="./assets/playstore_comingsoon.png"
+                alt="App Store Logo"
+            /></a>
+            <!-- <a href="#">Get it on Google Play</a> -->
+            <a href="#" onclick="alertBox(this)"
+              ><img
+                class="appstore"
+                src="./assets/appstore_comingsoon.png"
+                alt="Google Play Logo"
+            /></a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="gradient-blur">
+            <img src="./assets/handimage.png" alt="App Mockup" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-class">
+        <div class="about-content">
+          <h2 style="font-family: Sora, sans-serif">
+            What is
+            <span
+              style="text-decoration: underline; text-decoration-color: #f45b69"
+              >Being Amma?</span
+            >
+          </h2>
+          <p style="font-family: Sora, sans-serif">
+            <span
+              style="text-decoration: underline; text-decoration-color: #f45b69"
+              >Being Amma</span
+            >
+            is a cutting-edge mobile application designed to provide
+            comprehensive support and Guidance to women during their pregnancy
+            journey. Recognizing the unique needs and challenges that women face
+            during this crucial period, Being Amma offers a holistic solution
+            that combines pregnancy tracking, educational resources, diet and
+            workout plans to ensure a healthy pregnancy experience.
+          </p>
+        </div>
+        <div class="about-image">
+          <img src="./assets/home.png" alt="Being Amma Features" />
+        </div>
+      </div>
+    </section>
+
+    <div class="feature-wrapper" id="features-wrapper">
+      <section class="features-section" id="features">
+        <div class="features-container">
+          <h2 class="features-title">
+            <span style="text-decoration: underline">Features</span> Designed to
+            Support and Empower You
+          </h2>
+          <p class="features-subtitle">
+            Discover how Being Amma simplifies and enhances your pregnancy
+            journey with these amazing features.
+          </p>
+          <div class="features-content">
+            <div class="features-box">
+              <div class="feature-card">
+                <div class="feature-icon">🥗</div>
+                <h3 class="feature-heading">Diet Recommendations</h3>
+                <p class="feature-description">
+                  Enjoy a customized pregnancy diet plan that keeps you and your
+                  baby healthy.
+                </p>
+              </div>
+              <div class="feature-card">
+                <div class="feature-icon">🧘🏻‍♀️</div>
+                <h3 class="feature-heading">Exercise Safely</h3>
+                <p class="feature-description">
+                  Follow guided exercises designed for each stage of your
+                  pregnancy.
+                </p>
+              </div>
+            </div>
+            <div class="features-image">
+              <!-- <img src="/assets/home.png" alt="App Mockup" class="mockup-image"> -->
+              <video
+                autoplay
+                loop
+                muted
+                playsinline
+                width="185%"
+                class="mockup-video"
+              >
+                <source
+                  src="assets/features/features_showreel.webm"
+                  type="video/webm"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="features-box">
+              <div class="feature-card">
+                <div class="feature-icon">🧩</div>
+                <h3 class="feature-heading">Soothing Activities</h3>
+                <p class="feature-description">
+                  Unwind with calming music and meditation designed for pregnant
+                  mothers.
+                </p>
+              </div>
+              <div class="feature-card">
+                <div class="feature-icon">💬</div>
+                <h3 class="feature-heading">Personalised Chatbot</h3>
+                <p class="feature-description">
+                  A dedicated AI-powered assistant to guide you through your
+                  pregnancy journey.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="activities">
+      <h2 class="activities-title">
+        <span style="text-decoration: underline">Activities</span> Designed to
+        Support and Empower You
+      </h2>
+      <p class="activities-subtitle">
+        Discover how Being Amma enhances your pregnancy journey with these
+        soothing activities.
+      </p>
+      <div class="scroll-container">
+        <section class="feature" id="feature1">
+          <div class="content" style="background-color: #141c1e">
+            <img src="assets/activities/music.png" alt="Feature 1" />
+            <div class="text">
+              <h4>Relax with Soothing Melodies</h4>
+              <h2>🎵 Music</h2>
+              <p>
+                Relax with calming melodies designed to ease stress and uplift
+                your mood, creating a serene environment for you and your baby.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="feature" id="feature2">
+          <div class="content" style="background-color: #f45b69">
+            <img src="assets/activities/meditation.png" alt="Feature 2" />
+            <div class="text">
+              <h4>Find Your Inner Peace</h4>
+              <h2>🧘‍♀️ Meditation</h2>
+              <p>
+                Experience guided meditation sessions designed to reduce
+                anxiety, improve focus, and bring a sense of calm to your day.
+                Breathe, relax, and connect deeply with yourself and your little
+                one.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="feature" id="feature3">
+          <div class="content" style="background-color: #122fd2">
+            <img src="assets/activities/yoga.png" alt="Feature 3" />
+            <div class="text">
+              <h4>Rejuvenate with Gentle Yoga</h4>
+              <h2>🧘‍♀️ Yoga</h2>
+              <p>
+                Practice safe and gentle yoga routines tailored for every stage
+                of pregnancy. Improve flexibility, strengthen your body, and
+                enhance your well-being while preparing for a healthy delivery.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="feature" id="feature4">
+          <div class="content" style="background-color: blueviolet">
+            <img src="assets/activities/games.png" alt="Feature 4" />
+            <div class="text">
+              <h4>Unwind with Relaxing Games</h4>
+              <h2>🎮 Games</h2>
+              <p>
+                Enjoy a selection of simple, stress-free games designed to
+                refresh your mind and lift your mood. Take a moment to play,
+                relax, and recharge during your pregnancy journey..
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- <section class="developed-by-section">
+        <div class="container">
+            <h2 class="section-title">Designed & Developed By</h2>
+            <div class="team-wrapper">
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/300" alt="Sreenath Allineni" class="team-photo">
+                    <h3 class="team-name">Sreenath Allineni</h3>
+                    <p class="team-role">UI/UX Designer & Developer</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/300" alt="Geethika Shoba" class="team-photo">
+                    <h3 class="team-name">Geethika Shoba</h3>
+                    <p class="team-role">Full Stack Developer</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="faq-section" id="faq">
+      <div class="faq-container">
+        <!-- <div class="faq-content">
+                <h2 class="faq-title">Frequently Asked Questions</h2>
+                <div class="faq-list">
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question">The expense windows adapted sir. Wrong widen drawn.</div>
+                        <div class="faq-answer">Offending belonging promotion provision an be oh consulted ourselves it. Blessing welcomed ladyship she met humoured sir breeding her.</div>
+                    </div>
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question">Six curiosity day assurance bed necessary?</div>
+                        <div class="faq-answer">Curiosity day assurance helps in managing daily tasks effectively.</div>
+                    </div>
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question">Produce say the ten moments parties?</div>
+                        <div class="faq-answer">Enjoy gatherings with proper planning and preparation.</div>
+                    </div>
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question">Simple innate summer fat appear basket his desire joy?</div>
+                        <div class="faq-answer">Maintaining a balanced lifestyle contributes to joy and fulfillment.</div>
+                    </div>
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question">Outward clothes promise at gravity do excited?</div>
+                        <div class="faq-answer">Proper attire boosts confidence and leaves a positive impression.</div>
+                    </div>
+                </div>
+            </div> -->
+        <div class="faq-form-container">
+          <h3 class="faq-form-title">Have Any Question?</h3>
+          <p class="faq-form-description">
+            We have several powerful plans to showcase your business and get
+            discovered.
+          </p>
+          <form class="faq-form">
+            <div class="form-row">
+              <input
+                type="text"
+                placeholder="Your full name"
+                class="form-input"
+              />
+            </div>
+            <div class="form-row">
+              <input
+                type="email"
+                placeholder="Your mail address"
+                class="form-input"
+              />
+            </div>
+            <div class="form-row">
+              <textarea
+                placeholder="Your message here..."
+                class="form-textarea"
+              ></textarea>
+            </div>
+            <button type="submit" class="form-submit">
+              Send Your Message Now
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="download-section" id="download">
+      <div class="download-container">
+        <div class="download-content">
+          <h2 class="download-title">Your Pregnancy Companion Awaits!</h2>
+          <p class="download-description">
+            Track, learn, and thrive with
+            <span style="text-decoration: underline">Being Amma.</span> Download
+            the app and embrace a joyful journey to motherhood.
+          </p>
+          <div class="download-buttons">
+            <a href="#" class="google-play" onclick="alertBox(this)">
+              <img
+                src="./assets/playstore_comingsoon.png"
+                alt="Get it on Google Play"
+              />
+            </a>
+            <a href="#" class="app-store" onclick="alertBox(this)">
+              <img
+                src="./assets/appstore_comingsoon.png"
+                alt="Download on the App Store"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="download-image">
+          <img src="./image.png" alt="App Mockup 1" class="mockup-image" />
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Brand Section -->
+        <div class="footer-brand">
+          <h2 class="footer-logo">
+            <span style="color: #f45b69">Being Amma</span>
+          </h2>
+          <p class="footer-description">
+            Being Amma is not a product, its a service.
+          </p>
+        </div>
+
+        <!-- Useful Links -->
+        <div class="footer-links">
+          <h3>Useful Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#features-wrapper">How It Works</a></li>
+            <li><a href="#" id="viewPolicyBtn">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Policy Modal -->
+        <div id="policyModal" class="modal">
+          <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Privacy Policy</h2>
+            <hr class="separator" />
+            <!-- Modern separator line -->
+
+            <div class="policy-text">
+              <p>
+                Welcome to
+                <u
+                  style="
+                    text-decoration: underline;
+                    text-decoration-color: #f45b69;
+                    text-decoration-thickness: 2px;
+                  "
+                >
+                  Being Amma</u
+                >! Your privacy is important to us. This Privacy Policy explains
+                how we collect, use, and protect your information when you use
+                our app.
+              </p>
+
+              <h3>1. Information We Collect:</h3>
+              <ul>
+                <li>
+                  <strong>Personal Information:</strong> We collect your
+                  <strong>full name</strong> and
+                  <strong>email address</strong> solely for login and account
+                  authentication purposes.
+                </li>
+                <li>
+                  <strong>Expected Delivery Date:</strong> This information is
+                  collected each time you log in to personalize your experience.
+                  <strong>We do not store this information</strong> after you
+                  log out.
+                </li>
+              </ul>
+
+              <h3>2. How We Use Your Information:</h3>
+              <ul>
+                <li>To provide secure login access to the app.</li>
+                <li>
+                  To personalize content based on your provided expected
+                  delivery date during each session.
+                </li>
+              </ul>
+
+              <h3>3. Data Storage and Security:</h3>
+              <ul>
+                <li>
+                  We <strong>do not store</strong> any personal data beyond your
+                  login session.
+                </li>
+                <li>
+                  Your name and email are used strictly for authentication and
+                  are not stored for any other purpose.
+                </li>
+                <li>
+                  We implement standard security measures to protect your
+                  information during use.
+                </li>
+              </ul>
+
+              <h3>4. Data Sharing and Disclosure:</h3>
+              <ul>
+                <li>
+                  We <strong>do not sell, share, or disclose</strong> your
+                  personal information to third parties.
+                </li>
+                <li>
+                  We only use your data to enhance your experience within the
+                  app.
+                </li>
+              </ul>
+
+              <h3>5. User Rights:</h3>
+              <ul>
+                <li>
+                  Since we do not store your data permanently, there is no
+                  personal data retained after you log out.
+                </li>
+                <li>
+                  For any concerns regarding your login information, you can
+                  contact us directly.
+                </li>
+              </ul>
+
+              <h3>6. Changes to This Policy:</h3>
+              <p>
+                We may update this Privacy Policy occasionally. Any changes will
+                be posted within the app and on our website with an updated
+                effective date.
+              </p>
+
+              <h3>7. Contact Us:</h3>
+              <p>
+                If you have any questions about this Privacy Policy, please
+                contact
+              </p>
+              <!-- <p><strong>Email:</strong> [Insert Contact Email]</p> -->
+
+              <p>
+                Thank you for trusting <em>Being Amma</em> to support you on
+                your pregnancy journey.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- App Download Section -->
+        <div class="footer-download">
+          <h3>Download App</h3>
+          <a href="#" onclick="alertBox(this)">
+            <img
+              src="/assets/appstore_comingsoon.png"
+              alt="App Store"
+              class="app-store"
+            />
+          </a>
+          <a href="#" onclick="alertBox(this)">
+            <img
+              src="/assets/playstore_comingsoon.png"
+              alt="Google Play"
+              class="google-play"
+            />
+          </a>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; 2025 Being Amma - All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <style></style>
+
+    <script>
+      document.querySelectorAll("video").forEach((video) => {
+        video.addEventListener("contextmenu", (event) =>
+          event.preventDefault()
+        );
+      });
+
+      function toggleFaq(item) {
+        const isActive = item.classList.contains("active");
+        document
+          .querySelectorAll(".faq-item")
+          .forEach((faq) => faq.classList.remove("active"));
+        if (!isActive) {
+          item.classList.add("active");
+        }
+      }
+
+      function toggleMenu() {
+        const menu = document.getElementById("menu");
+        menu.classList.toggle("active");
+      }
+
+      function alertBox(id) {
+        alert("Coming very soon! Stay Tuned for Updates.");
+      }
+    </script>
+  </body>
+</html>
